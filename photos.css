@@ -1,0 +1,15 @@
+.hero-layout{grid-template-columns:1.2fr 1fr;gap:70px}
+.hero-portrait{margin:0;position:relative;isolation:isolate;overflow:hidden;border-radius:12px;border:1px solid #51473c;background:#25211c;max-width:460px;width:100%;justify-self:end;box-shadow:0 25px 70px #0004}
+.hero-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 32%}
+.hero-portrait::after{content:"";position:absolute;inset:55% 0 0;z-index:1;background:linear-gradient(transparent,#0e0e0ee8);pointer-events:none}
+.hero-portrait figcaption{position:absolute;bottom:24px;left:27px;right:27px;z-index:2;display:flex;flex-direction:column;gap:5px}
+.hero-portrait figcaption span:first-child{font-family:Consolas,monospace;font-size:12px;letter-spacing:1.5px;color:#ffd1aa}
+.hero-portrait figcaption span:last-child{font-size:15px;color:#eee5db}
+.about-visuals{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:center;margin-top:64px}
+.workspace-photo{margin:0;position:relative;overflow:hidden;border:1px solid #4b4137;border-radius:10px;max-width:470px;background:#211e1b}
+.workspace-photo img{display:block;width:100%;height:auto;aspect-ratio:1/1.12;object-fit:cover;object-position:50% 30%}
+.workspace-photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:55px 24px 23px;background:linear-gradient(transparent,#0e0e0eeb);font-family:Consolas,monospace;letter-spacing:1px;font-size:10px;line-height:1.8;color:#e5ccb5}
+.about-visuals .system-panel{width:100%;max-width:none}
+@media(max-width:1100px){.hero-layout{gap:35px}.about-visuals{gap:30px}}
+@media(max-width:800px){.hero-layout{grid-template-columns:1fr}.hero-portrait{justify-self:start;max-width:480px}.about-visuals{grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.workspace-photo img{height:100%;aspect-ratio:auto}.about-visuals .system-heading h2{font-size:21px}.about-visuals .panel-top{padding-inline:15px}.about-visuals .flow{padding-inline:15px}.about-visuals .flow-node{padding:12px 10px;gap:9px}.about-visuals .node-number{display:none}.about-visuals .panel-bottom{flex-direction:column;align-items:start;gap:5px}}
+@media(max-width:600px){.about-visuals{grid-template-columns:1fr;gap:28px;margin-top:38px}.workspace-photo{max-width:none}.workspace-photo img{height:auto;aspect-ratio:1/1.08}.about-visuals .panel-bottom{flex-direction:row;align-items:center}.about-visuals .system-heading h2{font-size:24px}.hero-portrait{max-width:440px}.hero-portrait figcaption{bottom:20px;left:22px}.hero-portrait figcaption span:last-child{font-size:14px}}

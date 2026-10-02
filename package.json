@@ -1,0 +1,1 @@
+{"name":"sma-portfolio","version":"1.0.0","private":true,"description":"Syed Mujtaba Aly developer portfolio","scripts":{"start":"node server.cjs","check":"node --check dist/app.js"}}
